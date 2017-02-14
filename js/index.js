@@ -9,6 +9,8 @@ $(document).ready(function() {
     var latestQuery;
     var queryChanged = false;
 
+    $("#search-bar-input").prop("value", "");
+
     $("#search-bar-input").focus();
     $("#search-bar-input").on("input", function() {
         var query = $("#search-bar-input").val();
